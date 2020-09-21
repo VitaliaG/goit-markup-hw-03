@@ -1,0 +1,132 @@
+.body {
+  font-family: "Roboto", sans-serif;
+  background-color: #e5e5e5;
+}
+
+.header-content {
+  background-color: #ffffff;
+  width: 1600px;
+  height: 80px;
+}
+
+.company-logo {
+  margin-top: 24px;
+  margin-bottom: 25px;
+  margin-left: 215px;
+  margin-right: 1240px;
+}
+
+.nav-link-list {
+  margin: 0;
+}
+.nav-link {
+  color: black;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: rgb(0, 119, 255);
+}
+
+.contact-link {
+  color: #757575;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+.contact-link:hover,
+.contact-link:focus {
+  color: rgb(0, 119, 255);
+}
+
+.main-content {
+  background-color: #ffffff;
+}
+
+.title1 {
+  font-style: normal;
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 60px;
+  text-align: center;
+  vertical-align: middle;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.section1 {
+  background-color: #2f303a;
+  width: 1600px;
+  height: 600px;
+}
+
+.order-service-button {
+  width: 200px;
+  height: 50px;
+  left: 700px;
+  top: 433px;
+  color: white;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background-color: #2196f3;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.order-service-button:hover {
+  width: 200px;
+  height: 50px;
+  left: 700px;
+  top: 433px;
+  color: white;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  background-color: #188ce8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
+.title2 {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+
+.title3 {
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #212121;
+}
+
+.strong-sides-description {
+  color: #757575;
+}
+.team-list {
+  background-color: #f5f4fa;
+  width: 1600px;
+}
+
+.figure-item {
+  width: 270px;
+  height: 368px;
+}
+
+.footer {
+  background-color: #2f303a;
+  width: 1600px;
+}
+
+.adress-info-footer {
+  color: white;
+}
+.contacts-footer {
+  color: rgba(255, 255, 255, 0.6);
+}
