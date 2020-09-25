@@ -8,34 +8,33 @@
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.7.0/modern-normalize.min.css"
     />
-    <link rel="stylesheet" href="./portfolio-css/portfolio.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
       rel="stylesheet"
     />
-  </head>
-  <body class="body">
-    <header class="portfolio-header">
-      <nav class="navigation">
-        <a href="./" class="logo">
-          <img
-            src="../goit-markup-hw-03/WebStudio/img/WebStudio.svg"
-            width="145"
-            height="31"
-            alt="логотип-WebStudio"
-          />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    </head>
+  <body>
+    <header>
+      <nav>
+        <a class="company-logo" href="./index.html">
+          <span class="logo-web">Web</span><span class="logo-studio"></span>Studio</span>
         </a>
 
-        <ul class="list-nav">
+        <ul class="nav-link-list">
           <li>
             <a class="nav-link" href="./index.html"> Студия</a>
           </li>
-          <li><a class="nav-link" href=""> Портфолио</a></li>
+          <li><a class="nav-link" href="./portfolio.html"> Портфолио</a></li>
           <li><a class="nav-link" href=""> Контакты</a></li>
         </ul>
       </nav>
 
-      <ul class="list-contact">
+      <ul>
         <li>
           <a class="contact-link" href="mailto:info@devstudio.com">
             info@devstudio.com</a
@@ -49,156 +48,140 @@
 
     <!--Content-conteiner-->
 
-    <main class="main-content">
-      <ul class="list-button">
-        <li><button type="button">Все</button></li>
-        <li><button type="button">Веб-сайты</button></li>
-        <li><button type="button">Приложения</button></li>
-        <li><button type="button">Дизайн</button></li>
-        <li><button type="button">Маркетинг</button></li>
-      </ul>
-      <section class="content-list">
-        <!--figure#1-->
-        <figure class="content-list-item">
-          <img
-            src="../goit-markup-hw-03/porfolio-img/technokriak.jpg"
-            width="370"
-            height="294"
-            alt="Технокряк"
-          />
-          <figcaption>
-            <h2>Технокряк</h2>
-            <p>Веб-сайт</p>
-          </figcaption>
-        </figure>
+    <main>
+      <section>
+        <ul class="button-list">
+          <li><button type="button" class="work-buttons">Все</button></li>
+          <li><button type="button" class="work-buttons">Веб-сайты</button></li>
+          <li>
+            <button type="button" class="work-buttons">Приложения</button>
+          </li>
+          <li><button type="button" class="work-buttons">Дизайн</button></li>
+          <li><button type="button" class="work-buttons">Маркетинг</button></li>
+        </ul>
 
-        <!--figure#2-->
-        <figure class="content-list-item">
-          <img
-            src="../goit-markup-hw-03/porfolio-img/poster-NO.jpg"
-            width="370"
-            height="294"
-            alt=" Постер New Orlean vs Golden Star"
-          />
-          <figcaption>
-            <h2>Постер New Orlean vs Golden Star</h2>
-            <p>Дизайн</p>
-          </figcaption>
-        </figure>
+        <!--Works cards-->
+        <ul>
+          <li>
+            <a class="project-link" href="">
+              <img
+                src="./img/porfolio-img/technokriak.jpg"
+                width="370"
+                alt="Технокряк"
+              />
+              <h2>Технокряк</h2>
+              <p>Веб-сайт</p>
+            </a>
+          </li>
 
-        <!--figure#3-->
-        <figure class="content-list-item">
-          <img
-            src="../goit-markup-hw-03/porfolio-img/restaurant.jpg"
-            width="370"
-            height="294"
-            alt="Ресторан Seafood"
-          />
-          <figcaption>
-            <h2>Ресторан Seafood</h2>
-            <p>Приложение</p>
-          </figcaption>
-        </figure>
+          <li>
+            <a class="project-link" href=""
+              ><img
+                src="./img/porfolio-img/poster-NO.jpg"
+                width="370"
+                alt=" Постер New Orlean vs Golden Star"
+              />
+              <h2>Постер New Orlean vs Golden Star</h2>
+              <p>Дизайн</p>
+            </a>
+          </li>
 
-        <!--figure#4-->
-        <figure class="content-list-item">
-          <img
-            src="../goit-markup-hw-03/porfolio-img/project-prime.jpg"
-            width="370"
-            height="294"
-            alt="Проект Prime"
-          />
-          <figcaption>
-            <h2>Проект Prime</h2>
-            <p>Маркетинг</p>
-          </figcaption>
-        </figure>
+          <li>
+            <a class="project-link" href=""
+              ><img
+                src="./img/porfolio-img/restaurant.jpg"
+                width="370"
+                alt="Ресторан Seafood"
+              />
+              <h2>Ресторан Seafood</h2>
+              <p>Приложение</p>
+            </a>
+          </li>
 
-        <!--figure#5-->
-        <figure class="content-list-item">
-          <img
-            src="../goit-markup-hw-03/porfolio-img/project-boxes.jpg"
-            width="370"
-            height="294"
-            alt="Проект Boxes"
-          />
-          <figcaption>
-            <h2>Проект Boxes</h2>
-            <p>Приложение</p>
-          </figcaption>
-        </figure>
+          <li>
+            <a class="project-link" href=""
+              ><img
+                src="./img/porfolio-img/project-prime.jpg"
+                width="370"
+                alt="Проект Prime"
+              />
+              <h2>Проект Prime</h2>
+              <p>Маркетинг</p>
+            </a>
+          </li>
 
-        <!--figure#6-->
-        <figure class="content-list-item">
-          <img
-            src="../goit-markup-hw-03/porfolio-img/inspiration.jpg"
-            width="370"
-            height="294"
-            alt="Inspiration has no Borders"
-          />
-          <figcaption>
-            <h2>Inspiration has no Borders</h2>
-            <p>Веб-сайт</p>
-          </figcaption>
-        </figure>
+          <li>
+            <a class="project-link" href=""
+              ><img
+                src="./img/porfolio-img/project-boxes.jpg"
+                width="370"
+                alt="Проект Boxes"
+              />
+              <h2>Проект Boxes</h2>
+              <p>Приложение</p>
+            </a>
+          </li>
 
-        <!--figure#7-->
-        <figure class="content-list-item">
-          <img
-            src="../goit-markup-hw-03/porfolio-img/edition.jpg"
-            width="370"
-            height="294"
-            alt="Издание Limited Edition"
-          />
-          <figcaption>
-            <h2>Издание Limited Edition</h2>
-            <p>Дизайн</p>
-          </figcaption>
-        </figure>
+          <li>
+            <a class="project-link" href=""
+              ><img
+                src="./img/porfolio-img/inspiration.jpg"
+                width="370"
+                alt="Inspiration has no Borders"
+              />
+              <h2>Inspiration has no Borders</h2>
+              <p>Веб-сайт</p>
+            </a>
+          </li>
 
-        <!--figure#8-->
-        <figure class="content-list-item">
-          <img
-            src="../goit-markup-hw-03/porfolio-img/project-lab.jpg"
-            width="370"
-            height="294"
-            alt="Проект LAB"
-          />
-          <figcaption>
-            <h2>Проект LAB</h2>
-            <p>Маркетинг</p>
-          </figcaption>
-        </figure>
+          <li>
+            <a class="project-link" href="">
+              <img
+                src="./img/porfolio-img/edition.jpg"
+                width="370"
+                alt="Издание Limited Edition"
+              />
+              <h2>Издание Limited Edition</h2>
+              <p>Дизайн</p>
+            </a>
+          </li>
 
-        <!--figure#9-->
-        <figure class="content-list-item">
-          <img
-            src="../goit-markup-hw-03/porfolio-img/growing-business.jpg"
-            width="370"
-            height="294"
-            alt="Growing Business"
-          />
-          <figcaption>
-            <h2>Growing Business</h2>
-            <p>Приложение</p>
-          </figcaption>
-        </figure>
+          <li>
+            <a class="project-link" href="">
+              <img
+                src="./img/porfolio-img/project-lab.jpg"
+                width="370"
+                alt="Проект LAB"
+              />
+              <h2>Проект LAB</h2>
+              <p>Маркетинг</p>
+            </a>
+          </li>
+
+          <li>
+            <a class="project-link" href=""
+              ><img
+                src="./img/porfolio-img/growing-business.jpg"
+                width="370"
+                alt="Growing Business"
+              />
+              <h2>Growing Business</h2>
+              <p>Приложение</p>
+            </a>
+          </li>
+        </ul>
       </section>
     </main>
     <footer class="footer">
-      <a href="">
-        <img
-          src="../goit-markup-hw-03/WebStudio/img/WebStudio.svg"
-          width="145"
-          height="31"
-          alt="логотип-WebStudio"
-        />
+      <a class="company-logo" href="./index.html">
+        <span class="logo-web">Web</span
+        ><span class="logo-studio-footer">Studio</span>
       </a>
-      <address>
-        <p class="adress-info-footer">г. Киев, пр-т Леси Украинки, 26</p>
-        <p class="contacts-footer">info@example.com</p>
-        <p class="contacts-footer">+38 099 111 11 11</p>
-      </address>
+      <ul>
+        <li class="adress-info-footer">г. Киев, пр-т Леси Украинки, 26</li>
+        <li class="contacts-footer">info@example.com</li>
+        <li class="contacts-footer">+38 099 111 11 11</li>
+      </ul>
     </footer>
   </body>
 </html>
