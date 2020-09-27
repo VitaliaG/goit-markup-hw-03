@@ -20,18 +20,21 @@ body {
   font-weight: normal;
   color: var(--main-text-color);
   background-color: var(--white-color);
-  letter-spacing: 0, 03em;
+  letter-spacing: 0.03em;
   /* padding-left: 200px;
   padding-right: 200px; */
-  width: 1600px;
 }
 
 .conteiner {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  margin-left: 200px;
-  margin-right: 200px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.flexbox {
+  display: flex;
 }
 
 ul {
@@ -39,7 +42,12 @@ ul {
   padding: 0px;
 }
 
-link {
+a {
+  color: var(--rare-color);
+  text-decoration: none;
+}
+
+.link {
   color: var(--rare-color);
   text-decoration: none;
 }
@@ -54,12 +62,21 @@ img {
 
 .header-content {
   background-color: var(--white-color);
-  /* width: 1600px; */
+  display: flex;
+  align-items: center;
+  width: 1600px;
+}
+
+.header-content .flexbox {
+  justify-content: flex-end;
+  align-items: center;
 }
 
 .company-logo {
   display: block;
   width: 145px;
+  margin-right: 90px;
+
   /* height: 31px; */
   text-decoration: none;
   color: var (--rare-color);
@@ -75,23 +92,32 @@ img {
   color: var(--accent-color);
 }
 
-.nav-link-list {
+.header-nav {
+  display: flex;
   align-items: center;
+  margin-right: auto;
+}
+
+.nav-link-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  /* align-items: center; */
+}
+
+.nav-item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .nav-link {
-  /* text-decoration: none; */
+  display: block;
+  /* padding-top: 32px;
+  padding-bottom: 32px; */
   color: var(--main-text-color);
-  /* width: 68px;
-  height: 16px; */
+
   font-weight: 500;
   line-height: 16px;
   letter-spacing: 0.02em;
-}
-
-.contact-link {
-  color: var(--rare-text-color);
-  text-decoration: none;
 }
 
 .nav-link:hover,
@@ -100,10 +126,29 @@ img {
   text-shadow: 0px 4px 4px var(--footer-shadow-color);
 }
 
+.contact-link-list {
+  display: flex;
+  margin-top: 0;
+  margin-bottom: 0;
+  /* margin-left: 320px; */
+}
+
+.contact-item {
+  display: flex;
+  padding: 0;
+}
+
+.contact-item:not(:last-child) {
+  margin-right: 50px;
+}
+
 .contact-link {
+  display: block;
   color: var(--secondary-text-color);
-  font-size: 14px;
-  text-decoration: none;
+  /* padding-top: 32px;
+  padding-bottom: 32px; */
+  /* font-size: 14px;
+  text-decoration: none; */
 }
 
 .contact-link:hover,
@@ -115,8 +160,20 @@ img {
   background-color: var(--white-color);
 }
 
+.section-hero {
+  width: 1600px;
+  background-color: var(--footer-background-color);
+  padding-top: 200px;
+  padding-bottom: 200px;
+
+  /* width: 1600px;
+  height: 600px; */
+}
+
 .title-hero {
-  font-style: normal;
+  display: flex;
+  /* flex-wrap: wrap; */
+  width: 696px;
   font-weight: 900;
   font-size: 44px;
   line-height: 60px;
@@ -125,16 +182,14 @@ img {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--white-color);
-}
-
-.section-hero {
-  background-color: var(--footer-background-color);
-  width: 1600px;
-  height: 600px;
+  margin-bottom: 30px;
+  margin-top: 0px;
 }
 
 .btn {
+  display: flex;
   position: absolute;
+  justify-content: center;
   width: 200px;
   height: 50px;
   color: var(--white-color);
@@ -169,15 +224,45 @@ img {
   letter-spacing: 0.03em;
   color: var(--main-text-color);
   margin-bottom: 50px;
+  margin-top: 0;
 }
 
 .strong-sides {
+  width: 1600px;
+  margin: 0;
+  padding-top: 98px;
+  padding-bottom: 90px;
+}
+
+.sides-list {
+  display: flex;
+  margin: 0;
+}
+
+.sides-title {
   font-weight: bold;
   text-transform: uppercase;
   color: var(--main-text-color);
+  line-height: 16px;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.sides-item {
+  width: calc((100%-30px * 3) / 4);
+}
+
+.sides-item:not(:nth-child(4n)) {
+  margin-right: 30px;
+}
+
+.sides-descr {
+  color: var(--secondary-text-color);
+  line-height: 24px;
 }
 
 .we-doing {
+  width: 1600px;
   padding-top: 90px;
   padding-bottom: 94px;
 }
@@ -196,10 +281,8 @@ img {
   margin-right: 30px;
 }
 
-.sides-descr {
-  color: var(--secondary-text-color);
-}
 .team {
+  width: 1600px;
   background-color: var(--light-background-color);
   margin: 0px;
   padding-top: 94px;
@@ -218,6 +301,7 @@ img {
   /* display: flex;
   flex-wrap: wrap; */
   width: calc((100%-30px * 3) / 4);
+  background-color: var(--white-color);
 
   /* width: 270px;
   height: 368px; */
@@ -225,6 +309,24 @@ img {
 
 .staff-item:not(:nth-child(4n)) {
   margin-right: 30px;
+  padding-bottom: 30px;
+}
+
+.staff-info,
+.staff-function {
+  text-align: center;
+  font-size: 16px;
+  line-height: 18px;
+}
+
+.staff-info {
+  color: var(--rare-text-color);
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.staff-function {
+  color: var(--secondary-text-color);
 }
 
 .footer {
@@ -241,10 +343,6 @@ img {
 }
 .contacts-footer {
   color: var(--footer-text-color);
-}
-
-ul {
-  list-style: none;
 }
 
 .company-logo {
@@ -308,7 +406,7 @@ ul {
 }
 
 .work-buttons {
-  width: 145px;
+  /* width: 74px; */
   height: 38px;
   text-align: center;
   font-weight: 500;
@@ -317,11 +415,12 @@ ul {
   background-color: var(--light-background-color);
   border-radius: 4px;
   border: 0px;
+  shadow: none;
 }
 
 .work-buttons:hover,
 .work-buttons:focus {
-  width: 145px;
+  /* width: 145px; */
   height: 38px;
   color: var(--white-color);
   text-align: center;
@@ -330,6 +429,20 @@ ul {
   background-color: var(--accent-background-color);
   box-shadow: 0px 4px 4px var(--box-shadow-color);
   border-radius: 4px;
+}
+
+.filters-gallery-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.filter-item:not(:last-child) {
+  margin-right: 8px;
+}
+
+.gallery {
+  width: 1600px;
 }
 
 .gallery-list {
@@ -343,8 +456,10 @@ ul {
 }
 
 .gallery-item {
-  width: calc((100%-30px * 2) / 3);
+  /* width: calc((100%-30px * 2) / 3); */
+  width: 370px;
   margin-bottom: 30px;
+  padding-bottom: 20px;
   /* border-radius: 5px; */
   /* overflow: hidden;
   transition: box-shadow */
@@ -354,12 +469,21 @@ ul {
   margin-bottom: 0px;
 }
 
+.gallery-title {
+  color: var(--rare-text-color);
+  font-weight: 700;
+  margin: 0;
+}
+
 .footer {
   background-color: var(--footer-background-color);
   padding-top: 60px;
   padding-bottom: 60px;
 }
 
+.logo-footer {
+  margin-bottom: 20px;
+}
 .logo-studio-footer {
   color: var(--white-color);
   line-height: 35.5px;
@@ -367,8 +491,13 @@ ul {
 
 .adress-info-footer {
   color: var(--white-color);
+  margin-bottom: 9px;
 }
 .contacts-footer {
   color: var(--footer-text-color);
   text-decoration: none;
+}
+
+.contacts-info:not(:last-child) {
+  margin-bottom: 9px;
 }
